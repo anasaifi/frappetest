@@ -1,0 +1,6 @@
+set -o pipefail; /usr/bin/mariadb-dump --user=_8b71228cdea2971a --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _8b71228cdea2971a | /usr/bin/gzip >> ./library.test/private/backups/20240208_190003-library_test-database.sql.gz
+
+Backup Summary for library.test at 2024-02-08 19:00:03.951026
+Config  : /home/anas/Desktop/frappetest/test/sites/library.test/private/backups/20240208_190003-library_test-site_config_backup.json 127.0B
+Database: /home/anas/Desktop/frappetest/test/sites/library.test/private/backups/20240208_190003-library_test-database.sql.gz 266.0KiB
+Backup for Site library.test has been successfully completed
